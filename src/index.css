@@ -1,0 +1,13 @@
+body, #root {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: radial-gradient(
+      circle at center top,
+      #5b21b6,   /* violet deschis central sus */
+      #080420    /* violet/negru intens spre margini */
+    );
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+  }
+  
