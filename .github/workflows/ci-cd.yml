@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - 'feature/**'
-      - '**' # orice branch nou
+      - '**'
   pull_request:
     branches:
       - main
@@ -25,8 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install vitest globally
+        run: npm install -g vitest
+
       - name: Run tests
-        run: npx vitest run --passWithNoTests
+        run: vitest run --passWithNoTests
 
       - name: Build Project
         run: npm run build
