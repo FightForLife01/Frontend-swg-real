@@ -28,8 +28,11 @@ jobs:
       - name: Install vitest globally
         run: npm install -g vitest
 
+      - name: Install vite globally
+        run: npm install -g vite
+
       - name: Run tests
         run: vitest run --passWithNoTests
 
       - name: Build Project
-        run: npm run build
+        run: vite build
